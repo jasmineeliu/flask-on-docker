@@ -27,7 +27,7 @@ git clone https://github.com/jasmineeliu/flask-on-docker.git
 For development mode, use the following commands:
 
 
-```
+```bash
 # To build a new image and bring up your containers in development mode
 docker compose up -d --build
 
