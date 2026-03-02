@@ -12,11 +12,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Build and push Docker image
+      - name: Build Docker image
         run: docker compose -f docker-compose.yml up -d --build
-
-      - name: Wait for containers
-        run: sleep 20
 
       - name: create database
         run: docker compose -f docker-compose.yml exec web python manage.py create_db
