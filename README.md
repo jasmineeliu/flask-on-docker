@@ -1,4 +1,4 @@
-#Dockerizing Flask with Postgres, Gunicorn, and Nginx
+# Dockerizing Flask with Postgres, Gunicorn, and Nginx
 
 ![Build Status](https://github.com/jasmineeliu/flask-on-docker/actions/workflows/build-dev.yml/badge.svg)
 
@@ -33,24 +33,4 @@ docker compose up -d --build
 Then, to create your PostgreSQL table in development mode:
 ```
 docker compose exec web python manage.py create_db
-```
-
-For production mode, use the following commands:
-
-To build a new image and bring up your containers in production mode
-```bash
-docker compose -f docker-compose.prod.yml up -d --build
-```
-Then, to create your PostgreSQL table in production mode: 
-```
-docker compose -f docker-compose.prod.yml exec web python manage.py create_db
-```
-
-For production mode, use the following commands:
-```bash
-# Build the application in production mode
-docker-compose -f docker-compose.prod.yml build
-
-# Run the application in production mode
-docker-compose -f docker-compose.prod.yml up
 ```
