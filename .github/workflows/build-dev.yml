@@ -1,4 +1,4 @@
-ame: Build and Test Dev Environment
+name: Build and Test Dev Environment
 
 on:
   push:
