@@ -9,6 +9,7 @@ This project containerizes Flask with PostgreSQL as its database for development
 ## Demo
 
 With the app, users can upload a media file and view it at `localhost:1089/media/file_name`. Users can also view static files at `localhost:1089/static/file_name`. 
+![Demo of the App working](./app-demo.gif)
 
 ## Building and Running the Application
 
